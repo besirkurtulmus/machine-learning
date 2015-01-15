@@ -30,7 +30,7 @@ dist=vec*vec';
 if (dist < dist0)
     dist0=dist;
     idx(i)=j;
-    endif
+end
     end
     end
 

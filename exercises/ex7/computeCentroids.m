@@ -30,9 +30,9 @@ for i=1:K,
     indices=find(idx == i);
     nindex=size(indices,1);
     for j=1:nindex,
-        centroids(i,:) += X(indices(j),:);
+        centroids(i,:) = centroids(i,:) + X(indices(j),:);
     end
-    centroids(i,:) /= nindex;
+    centroids(i,:) = centroids(i,:) / nindex;
 end
 
 % =============================================================
